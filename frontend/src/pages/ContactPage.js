@@ -72,7 +72,7 @@ const ContactPage = () => {
   };
 
   return (
-    <main data-testid="contact-page" className="min-h-screen bg-mono-black pt-32 pb-24">
+    <main data-testid="contact-page" className="min-h-screen bg-mono-cream pt-32 pb-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left - Contact Info */}
