@@ -207,7 +207,7 @@ const AboutPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group p-8 bg-mono-black/50 border border-mono-border rounded-lg hover:border-mono-accent/30 transition-colors"
+                className="group p-8 bg-mono-surface border border-mono-border rounded-lg hover:border-mono-accent/30 transition-colors"
                 data-testid={`service-${index}`}
               >
                 <service.icon size={32} className="text-mono-accent mb-6 group-hover:scale-110 transition-transform" />
