@@ -1,53 +1,86 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Toaster } from "sonner";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+// Context
+import { LanguageProvider } from "./context/LanguageContext";
+import { CartProvider } from "./context/CartContext";
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
+// Layout Components
+import { Navbar } from "./components/layout/Navbar";
+import { Footer } from "./components/layout/Footer";
+import { CartDrawer } from "./components/layout/CartDrawer";
+import { CustomCursor, GrainOverlay } from "./components/layout/Cursor";
+import { WhatsAppButton, CookieConsent } from "./components/layout/FloatingElements";
+
+// Pages
+import HomePage from "./pages/HomePage";
+import { ShopPage, ProductDetailPage } from "./pages/ShopPage";
+import MarqueeLettersPage from "./pages/MarqueeLettersPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import FAQPage from "./pages/FAQPage";
+import JournalPage from "./pages/JournalPage";
+import InspirationPage from "./pages/InspirationPage";
+import AdminPage from "./pages/AdminPage";
+
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    helloWorldApi();
-  }, []);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
+  return null;
 };
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <LanguageProvider>
+      <CartProvider>
+        <BrowserRouter>
+          <div className="App min-h-screen bg-mono-black text-mono-cream">
+            <ScrollToTop />
+            <CustomCursor />
+            <GrainOverlay />
+            <Navbar />
+            <CartDrawer />
+            
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/shop" element={<ShopPage />} />
+              <Route path="/shop/:handle" element={<ProductDetailPage />} />
+              <Route path="/marquee-letters" element={<MarqueeLettersPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/faq" element={<FAQPage />} />
+              <Route path="/journal" element={<JournalPage />} />
+              <Route path="/journal/:slug" element={<JournalPage />} />
+              <Route path="/inspiration" element={<InspirationPage />} />
+              <Route path="/admin" element={<AdminPage />} />
+            </Routes>
+
+            <Footer />
+            <WhatsAppButton />
+            <CookieConsent />
+            
+            <Toaster
+              position="bottom-right"
+              toastOptions={{
+                style: {
+                  background: '#111111',
+                  border: '1px solid rgba(201,185,154,0.2)',
+                  color: '#f0ece4',
+                  fontFamily: '"DM Sans", sans-serif',
+                },
+              }}
+            />
+          </div>
+        </BrowserRouter>
+      </CartProvider>
+    </LanguageProvider>
   );
 }
 
