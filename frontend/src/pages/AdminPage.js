@@ -167,7 +167,7 @@ const AdminPage = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <h1 className="font-serif text-4xl italic text-mono-cream">Admin Panel</h1>
+          <h1 className="font-serif text-4xl italic text-mono-primary">Admin Panel</h1>
           <div className="flex items-center gap-4">
             <button
               onClick={handleSeedData}
