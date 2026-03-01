@@ -290,10 +290,10 @@ async def get_product_by_handle(handle: str):
 
 @api_router.post("/admin/products", response_model=Product)
 async def create_product(product_data: ProductCreate, admin: str = Depends(verify_admin)):
-    product = Product(
-        **product_data.model_dump(),
-        handle=product_data.handle or generate_handle(product_data.title)
-    )
+    data = product_data.model_dump()
+    if not data.get('handle'):
+        data['handle'] = generate_handle(product_data.title)
+    product = Product(**data)
     doc = product.model_dump()
     doc['created_at'] = doc['created_at'].isoformat()
     doc['updated_at'] = doc['updated_at'].isoformat()
