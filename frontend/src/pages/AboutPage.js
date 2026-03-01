@@ -141,7 +141,7 @@ const AboutPage = () => {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-serif text-6xl md:text-8xl italic font-light text-mono-cream mb-4"
+            className="font-serif text-6xl md:text-8xl italic font-light text-mono-primary mb-4"
           >
             {t('about.title')}
           </motion.h1>
