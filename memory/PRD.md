@@ -75,7 +75,7 @@ MONO AUREL — Luxury art atelier website featuring handmade ceramic sculptures,
 - **Database:** MongoDB
 - **Payment:** Stripe (demo mode)
 
-## What's Been Implemented (v1.0)
+## What's Been Implemented (v1.1)
 - [x] Full e-commerce website with 8 main pages
 - [x] Admin panel with CRUD operations
 - [x] Shopping cart functionality
@@ -87,6 +87,7 @@ MONO AUREL — Luxury art atelier website featuring handmade ceramic sculptures,
 - [x] Premium animations (GSAP)
 - [x] Stripe checkout integration (demo)
 - [x] MongoDB with Shopify-compatible schema
+- [x] **NEW: Cream/beige theme (v1.1)** - Complete UI color palette change
 
 ## Prioritized Backlog
 
