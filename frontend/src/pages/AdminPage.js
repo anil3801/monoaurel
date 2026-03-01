@@ -337,7 +337,7 @@ const AdminPage = () => {
             {/* Quotes Tab */}
             {activeTab === 'quotes' && (
               <div>
-                <h2 className="font-sans text-lg text-mono-cream mb-6">Teklif Talepleri ({quotes.length})</h2>
+                <h2 className="font-sans text-lg text-mono-primary mb-6">Teklif Talepleri ({quotes.length})</h2>
                 <div className="space-y-4">
                   {quotes.map((quote) => (
                     <div
