@@ -37,16 +37,16 @@ export const CartDrawer = () => {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed right-0 top-0 h-full w-full max-w-md bg-mono-surface border-l border-mono-border z-50 flex flex-col"
+            className="fixed right-0 top-0 h-full w-full max-w-md bg-mono-cream border-l border-mono-border z-50 flex flex-col"
             data-testid="cart-drawer"
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-mono-border">
-              <h2 className="font-serif text-2xl italic text-mono-cream">{t('cart.title')}</h2>
+              <h2 className="font-serif text-2xl italic text-mono-primary">{t('cart.title')}</h2>
               <button
                 onClick={() => setIsCartOpen(false)}
                 data-testid="close-cart-btn"
-                className="p-2 text-mono-secondary hover:text-mono-cream transition-colors"
+                className="p-2 text-mono-secondary hover:text-mono-primary transition-colors"
               >
                 <X size={24} />
               </button>
@@ -60,7 +60,7 @@ export const CartDrawer = () => {
                   <p className="font-sans text-mono-secondary mb-6">{t('cart.empty')}</p>
                   <button
                     onClick={() => setIsCartOpen(false)}
-                    className="font-sans text-sm uppercase tracking-widest text-mono-accent underline underline-offset-4 hover:text-mono-cream transition-colors"
+                    className="font-sans text-sm uppercase tracking-widest text-mono-accent underline underline-offset-4 hover:text-mono-primary transition-colors"
                   >
                     {t('cart.continueShopping')}
                   </button>
@@ -74,7 +74,7 @@ export const CartDrawer = () => {
                       data-testid={`cart-item-${item.product.id}`}
                     >
                       {/* Image */}
-                      <div className="w-24 h-24 bg-mono-black rounded overflow-hidden flex-shrink-0">
+                      <div className="w-24 h-24 bg-mono-surface rounded overflow-hidden flex-shrink-0">
                         {item.product.images?.[0] ? (
                           <img
                             src={item.product.images[0].src}
@@ -82,13 +82,13 @@ export const CartDrawer = () => {
                             className="w-full h-full object-cover"
                           />
                         ) : (
-                          <div className="w-full h-full bg-mono-surface-hover" />
+                          <div className="w-full h-full bg-mono-surface-dark" />
                         )}
                       </div>
 
                       {/* Details */}
                       <div className="flex-1">
-                        <h3 className="font-serif text-lg text-mono-cream">
+                        <h3 className="font-serif text-lg text-mono-primary">
                           {language === 'tr' && item.product.title_tr
                             ? item.product.title_tr
                             : item.product.title}
@@ -138,13 +138,13 @@ export const CartDrawer = () => {
                   <span className="font-sans text-sm uppercase tracking-widest text-mono-secondary">
                     {t('cart.subtotal')}
                   </span>
-                  <span className="font-serif text-2xl text-mono-cream">{formatPrice(cartTotal)}</span>
+                  <span className="font-serif text-2xl text-mono-primary">{formatPrice(cartTotal)}</span>
                 </div>
                 <Link
                   to="/checkout"
                   onClick={() => setIsCartOpen(false)}
                   data-testid="checkout-btn"
-                  className="block w-full py-4 text-center font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-black hover:bg-mono-highlight transition-colors rounded-full"
+                  className="block w-full py-4 text-center font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-cream hover:bg-mono-highlight transition-colors rounded-full"
                 >
                   {t('cart.checkout')}
                 </Link>
