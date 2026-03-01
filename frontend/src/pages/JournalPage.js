@@ -168,7 +168,7 @@ const JournalPage = () => {
                     </span>
                   </div>
 
-                  <h2 className="font-serif text-2xl italic text-mono-cream group-hover:text-mono-accent transition-colors mb-2">
+                  <h2 className="font-serif text-2xl italic text-mono-primary group-hover:text-mono-accent transition-colors mb-2">
                     {language === 'tr' && post.title_tr ? post.title_tr : post.title}
                   </h2>
 
