@@ -295,7 +295,7 @@ const AdminPage = () => {
             {activeTab === 'collections' && (
               <div>
                 <div className="flex justify-between items-center mb-6">
-                  <h2 className="font-sans text-lg text-mono-cream">Koleksiyonlar ({collections.length})</h2>
+                  <h2 className="font-sans text-lg text-mono-primary">Koleksiyonlar ({collections.length})</h2>
                   <button
                     onClick={() => setEditingCollection({})}
                     className="flex items-center gap-2 px-4 py-2 font-sans text-xs uppercase tracking-widest bg-mono-accent text-mono-black rounded-full hover:bg-mono-highlight transition-colors"
