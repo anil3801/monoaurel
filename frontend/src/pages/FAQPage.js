@@ -152,7 +152,7 @@ const FAQPage = () => {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="font-serif text-5xl md:text-7xl italic font-light text-mono-cream mb-16 text-center"
+          className="font-serif text-5xl md:text-7xl italic font-light text-mono-primary mb-16 text-center"
         >
           {t('faq.title')}
         </motion.h1>
