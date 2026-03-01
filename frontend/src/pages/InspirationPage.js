@@ -65,7 +65,7 @@ const InspirationPage = () => {
   ];
 
   return (
-    <main data-testid="inspiration-page" className="min-h-screen bg-mono-black pt-32 pb-24">
+    <main data-testid="inspiration-page" className="min-h-screen bg-mono-cream pt-32 pb-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* Header */}
         <div className="text-center mb-16">
