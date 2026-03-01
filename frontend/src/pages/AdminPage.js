@@ -117,7 +117,7 @@ const AdminPage = () => {
 
   if (!isAuthenticated) {
     return (
-      <main className="min-h-screen bg-mono-black flex items-center justify-center px-6">
+      <main className="min-h-screen bg-mono-cream flex items-center justify-center px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
