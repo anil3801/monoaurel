@@ -49,20 +49,20 @@ const ShopPage = () => {
   const getStockBadge = (status) => {
     const badges = {
       in_stock: { text: t('featured.inStock'), class: 'bg-mono-accent/20 text-mono-accent' },
-      made_to_order: { text: t('featured.madeToOrder'), class: 'bg-mono-highlight/20 text-mono-highlight' },
+      made_to_order: { text: t('featured.madeToOrder'), class: 'bg-mono-accent-light/20 text-mono-accent' },
       sold_out: { text: t('featured.soldOut'), class: 'bg-mono-error/20 text-mono-error' },
     };
     return badges[status] || badges.in_stock;
   };
 
   return (
-    <main data-testid="shop-page" className="min-h-screen bg-mono-black pt-32 pb-24">
+    <main data-testid="shop-page" className="min-h-screen bg-mono-cream pt-32 pb-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* Header */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          className="font-serif text-5xl md:text-7xl italic font-light text-mono-cream mb-16"
+          className="font-serif text-5xl md:text-7xl italic font-light text-mono-primary mb-16"
         >
           {t('shop.title')}
         </motion.h1>
@@ -74,8 +74,8 @@ const ShopPage = () => {
             data-testid="filter-all"
             className={`px-4 py-2 font-sans text-xs uppercase tracking-widest rounded-full border transition-colors ${
               selectedCollection === null
-                ? 'border-mono-accent bg-mono-accent text-mono-black'
-                : 'border-mono-border text-mono-secondary hover:border-mono-accent hover:text-mono-cream'
+                ? 'border-mono-accent bg-mono-accent text-mono-cream'
+                : 'border-mono-border text-mono-secondary hover:border-mono-accent hover:text-mono-primary'
             }`}
           >
             {t('shop.all')}
@@ -87,8 +87,8 @@ const ShopPage = () => {
               data-testid={`filter-${col.handle}`}
               className={`px-4 py-2 font-sans text-xs uppercase tracking-widest rounded-full border transition-colors ${
                 selectedCollection === col.id
-                  ? 'border-mono-accent bg-mono-accent text-mono-black'
-                  : 'border-mono-border text-mono-secondary hover:border-mono-accent hover:text-mono-cream'
+                  ? 'border-mono-accent bg-mono-accent text-mono-cream'
+                  : 'border-mono-border text-mono-secondary hover:border-mono-accent hover:text-mono-primary'
               }`}
             >
               {language === 'tr' && col.title_tr ? col.title_tr : col.title}
@@ -131,7 +131,7 @@ const ShopPage = () => {
                           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                       )}
-                      <div className="absolute inset-0 bg-mono-black/0 group-hover:bg-mono-black/20 transition-colors duration-500" />
+                      <div className="absolute inset-0 bg-mono-primary/0 group-hover:bg-mono-primary/10 transition-colors duration-500" />
                       
                       {/* Badge */}
                       <div className="absolute top-4 left-4">
@@ -142,14 +142,14 @@ const ShopPage = () => {
 
                       {/* Hover Overlay */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        <span className="px-6 py-3 bg-mono-black/80 font-sans text-xs uppercase tracking-widest text-mono-cream rounded-full">
+                        <span className="px-6 py-3 bg-mono-cream/90 font-sans text-xs uppercase tracking-widest text-mono-primary rounded-full">
                           {t('featured.viewPiece')}
                         </span>
                       </div>
                     </div>
 
                     {/* Info */}
-                    <h3 className="font-serif text-xl italic text-mono-cream group-hover:text-mono-accent transition-colors">
+                    <h3 className="font-serif text-xl italic text-mono-primary group-hover:text-mono-accent transition-colors">
                       {language === 'tr' && product.title_tr ? product.title_tr : product.title}
                     </h3>
                     <p className="font-sans text-mono-accent mt-1">
