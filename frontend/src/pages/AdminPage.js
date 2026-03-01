@@ -499,10 +499,10 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
   };
 
   return (
-    <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 overflow-y-auto">
-      <div className="bg-mono-surface rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+    <div className="fixed inset-0 bg-mono-black/60 z-50 flex items-center justify-center p-4 overflow-y-auto">
+      <div className="bg-mono-cream rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
         <div className="p-6 border-b border-mono-border">
-          <h2 className="font-serif text-2xl italic text-mono-cream">
+          <h2 className="font-serif text-2xl italic text-mono-primary">
             {product.id ? 'Ürünü Düzenle' : 'Yeni Ürün'}
           </h2>
         </div>
