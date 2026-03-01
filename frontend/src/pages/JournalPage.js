@@ -88,7 +88,7 @@ const JournalPage = () => {
   };
 
   return (
-    <main data-testid="journal-page" className="min-h-screen bg-mono-black pt-32 pb-24">
+    <main data-testid="journal-page" className="min-h-screen bg-mono-cream pt-32 pb-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
