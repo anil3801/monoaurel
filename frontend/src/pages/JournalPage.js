@@ -107,8 +107,8 @@ const JournalPage = () => {
               data-testid={`journal-filter-${cat.value || 'all'}`}
               className={`px-4 py-2 font-sans text-xs uppercase tracking-widest rounded-full border transition-colors ${
                 selectedCategory === cat.value
-                  ? 'border-mono-accent bg-mono-accent text-mono-black'
-                  : 'border-mono-border text-mono-secondary hover:border-mono-accent hover:text-mono-cream'
+                  ? 'border-mono-accent bg-mono-accent text-mono-cream'
+                  : 'border-mono-border text-mono-secondary hover:border-mono-accent hover:text-mono-primary'
               }`}
             >
               {cat.label}
