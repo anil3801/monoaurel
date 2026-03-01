@@ -135,7 +135,7 @@ const MarqueeLettersPage = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* Stock Products */}
         <section className="mb-24">
-          <h2 className="font-serif text-3xl md:text-4xl italic text-mono-cream mb-12">
+          <h2 className="font-serif text-3xl md:text-4xl italic text-mono-primary mb-12">
             {t('marqueePage.stockTitle')}
           </h2>
 
