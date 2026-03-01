@@ -48,7 +48,7 @@ MONO AUREL — Luxury art atelier website featuring handmade ceramic sculptures,
   - Inspiration: Style-based mood boards
 
 - **UX/UI Features**
-  - Dark luxury aesthetic (#0a0a0a background, #c9b99a accent)
+  - Cream/beige luxury aesthetic (#f5f0e8 background, #8b6f47 accent)
   - Cormorant Garamond + DM Sans typography
   - GSAP animations (parallax, fade-in, counters)
   - Custom cursor on desktop
