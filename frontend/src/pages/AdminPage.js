@@ -199,8 +199,8 @@ const AdminPage = () => {
               data-testid={`admin-tab-${tab.id}`}
               className={`flex items-center gap-2 px-4 py-2 font-sans text-sm rounded-full transition-colors whitespace-nowrap ${
                 activeTab === tab.id
-                  ? 'bg-mono-accent text-mono-black'
-                  : 'bg-mono-surface text-mono-secondary hover:text-mono-cream'
+                  ? 'bg-mono-accent text-mono-cream'
+                  : 'bg-mono-surface text-mono-secondary hover:text-mono-primary'
               }`}
             >
               <tab.icon size={16} />
