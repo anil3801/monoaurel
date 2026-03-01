@@ -40,7 +40,7 @@ export const Navbar = () => {
       <nav
         data-testid="navbar"
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled ? 'glass py-4' : 'bg-transparent py-6'
+          isScrolled ? 'bg-mono-surface shadow-sm py-4' : 'bg-transparent py-6'
         }`}
       >
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
@@ -49,7 +49,7 @@ export const Navbar = () => {
             <Link
               to="/"
               data-testid="logo-link"
-              className="font-serif text-xl md:text-2xl tracking-[0.3em] text-mono-cream hover:text-mono-accent transition-colors"
+              className="font-serif text-xl md:text-2xl tracking-[0.3em] text-mono-primary hover:text-mono-accent transition-colors"
             >
               MONO AUREL
             </Link>
@@ -64,7 +64,7 @@ export const Navbar = () => {
                   className={`font-sans text-xs uppercase tracking-[0.2em] transition-colors ${
                     location.pathname === link.path
                       ? 'text-mono-accent'
-                      : 'text-mono-cream/80 hover:text-mono-accent'
+                      : 'text-mono-secondary hover:text-mono-accent'
                   }`}
                 >
                   {link.label}
@@ -78,7 +78,7 @@ export const Navbar = () => {
               <button
                 onClick={toggleLanguage}
                 data-testid="language-toggle"
-                className="font-sans text-xs uppercase tracking-[0.2em] text-mono-cream/80 hover:text-mono-accent transition-colors px-2 py-1 border border-mono-accent/30 rounded"
+                className="font-sans text-xs uppercase tracking-[0.2em] text-mono-secondary hover:text-mono-accent transition-colors px-2 py-1 border border-mono-accent/30 rounded"
               >
                 {language === 'en' ? 'TR' : 'EN'}
               </button>
@@ -87,11 +87,11 @@ export const Navbar = () => {
               <button
                 onClick={() => setIsCartOpen(true)}
                 data-testid="cart-button"
-                className="relative p-2 text-mono-cream hover:text-mono-accent transition-colors"
+                className="relative p-2 text-mono-primary hover:text-mono-accent transition-colors"
               >
                 <ShoppingBag size={20} />
                 {cartCount > 0 && (
-                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-mono-accent text-mono-black text-xs font-sans font-medium rounded-full flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-mono-accent text-mono-cream text-xs font-sans font-medium rounded-full flex items-center justify-center">
                     {cartCount}
                   </span>
                 )}
@@ -101,7 +101,7 @@ export const Navbar = () => {
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 data-testid="mobile-menu-toggle"
-                className="lg:hidden p-2 text-mono-cream hover:text-mono-accent transition-colors"
+                className="lg:hidden p-2 text-mono-primary hover:text-mono-accent transition-colors"
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -118,7 +118,7 @@ export const Navbar = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-mono-black lg:hidden"
+            className="fixed inset-0 z-40 bg-mono-cream lg:hidden"
             data-testid="mobile-menu"
           >
             <div className="flex flex-col items-center justify-center min-h-screen gap-8 px-6">
@@ -135,7 +135,7 @@ export const Navbar = () => {
                     className={`font-serif text-3xl italic tracking-wide transition-colors ${
                       location.pathname === link.path
                         ? 'text-mono-accent'
-                        : 'text-mono-cream hover:text-mono-accent'
+                        : 'text-mono-primary hover:text-mono-accent'
                     }`}
                   >
                     {link.label}
