@@ -123,7 +123,7 @@ const AdminPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="w-full max-w-md bg-mono-surface rounded-2xl p-8"
         >
-          <h1 className="font-serif text-3xl italic text-mono-cream mb-8 text-center">Admin Panel</h1>
+          <h1 className="font-serif text-3xl italic text-mono-primary mb-8 text-center">Admin Panel</h1>
           <form onSubmit={handleLogin} className="space-y-6">
             <div>
               <label className="block font-sans text-xs uppercase tracking-widest text-mono-secondary mb-2">
