@@ -80,7 +80,7 @@ const ContactPage = () => {
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              className="font-serif text-5xl md:text-6xl italic font-light text-mono-cream mb-8"
+              className="font-serif text-5xl md:text-6xl italic font-light text-mono-primary mb-8"
             >
               {t('contact.title')}
             </motion.h1>
