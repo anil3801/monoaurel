@@ -223,7 +223,7 @@ const ContactPage = () => {
                   onChange={handleInputChange}
                   required
                   data-testid="contact-form-name"
-                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
                 />
               </div>
 
@@ -239,7 +239,7 @@ const ContactPage = () => {
                   onChange={handleInputChange}
                   required
                   data-testid="contact-form-email"
-                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
                 />
               </div>
 
@@ -254,7 +254,7 @@ const ContactPage = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   data-testid="contact-form-phone"
-                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
                 />
               </div>
 
@@ -269,7 +269,7 @@ const ContactPage = () => {
                   onChange={handleInputChange}
                   required
                   data-testid="contact-form-category"
-                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
                 >
                   <option value="" className="bg-mono-surface">{language === 'tr' ? 'Seçiniz' : 'Select'}</option>
                   {categories.map((cat) => (
@@ -304,7 +304,7 @@ const ContactPage = () => {
                   value={formData.budget_range}
                   onChange={handleInputChange}
                   data-testid="contact-form-budget"
-                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
                 >
                   <option value="" className="bg-mono-surface">{language === 'tr' ? 'Seçiniz' : 'Select'}</option>
                   {budgetRanges.map((range) => (
