@@ -202,7 +202,7 @@ const MarqueeLettersPage = () => {
                 required
                 data-testid="marquee-form-text"
                 placeholder="LOVE, YOUR NAME, etc."
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream placeholder:text-mono-secondary/30 focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary placeholder:text-mono-secondary/30 focus:border-mono-accent transition-colors"
               />
             </div>
 
@@ -278,7 +278,7 @@ const MarqueeLettersPage = () => {
                 onChange={handleInputChange}
                 data-testid="marquee-form-color"
                 placeholder={language === 'tr' ? 'Altın, Beyaz, Siyah...' : 'Gold, White, Black...'}
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream placeholder:text-mono-secondary/30 focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary placeholder:text-mono-secondary/30 focus:border-mono-accent transition-colors"
               />
             </div>
 
