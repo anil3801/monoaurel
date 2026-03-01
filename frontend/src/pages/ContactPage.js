@@ -290,7 +290,7 @@ const ContactPage = () => {
                   required
                   rows={4}
                   data-testid="contact-form-message"
-                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors resize-none"
+                  className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors resize-none"
                 />
               </div>
 
