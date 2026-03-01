@@ -152,7 +152,7 @@ const AdminPage = () => {
             <button
               type="submit"
               data-testid="admin-login-btn"
-              className="w-full py-4 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-black rounded-full hover:bg-mono-highlight transition-colors"
+              className="w-full py-4 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-cream rounded-full hover:bg-mono-highlight transition-colors"
             >
               Giriş Yap
             </button>
