@@ -181,7 +181,7 @@ const MarqueeLettersPage = () => {
 
         {/* Custom Order Form */}
         <section className="bg-mono-surface rounded-2xl p-8 md:p-12">
-          <h2 className="font-serif text-3xl md:text-4xl italic text-mono-cream mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl italic text-mono-primary mb-4">
             {t('marqueePage.customTitle')}
           </h2>
           <p className="font-sans text-mono-secondary mb-12">
