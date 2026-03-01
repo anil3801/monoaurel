@@ -1,0 +1,123 @@
+{
+  "identity": {
+    "name": "MONO AUREL",
+    "type": "Luxury Art Atelier & E-commerce",
+    "aesthetic": "Dark Luxury, Gallery, Brutalist Elegance, Organic Textures",
+    "tone": "Sophisticated, Timeless, Artisanal, Serious",
+    "description": "El yapımı seramik heykeller, totem objeler ve dekoratif taş eserler sunan karanlık lüks bir sanat atölyesi."
+  },
+  "tech_stack": {
+    "framework": "React (CRA)",
+    "styling": "Tailwind CSS",
+    "ui_library": "Shadcn/UI",
+    "animation": {
+      "gsap": "GSAP (GreenSock) for complex timelines and scroll triggers",
+      "framer_motion": "Framer Motion for component transitions and gestures",
+      "lenis": "@studio-freight/react-lenis for smooth luxury scrolling"
+    },
+    "icons": "Lucide React (default), use Phosphor Icons for thinner, more elegant lines if needed",
+    "forms": "React Hook Form + Zod",
+    "router": "React Router DOM"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "\"Cormorant Garamond\", serif",
+      "body": "\"DM Sans\", sans-serif",
+      "mono": "\"JetBrains Mono\", monospace"
+    },
+    "imports": [
+      "@fontsource/cormorant-garamond/300.css",
+      "@fontsource/cormorant-garamond/400.css",
+      "@fontsource/cormorant-garamond/400-italic.css",
+      "@fontsource/cormorant-garamond/500-italic.css",
+      "@fontsource/cormorant-garamond/600.css",
+      "@fontsource/dm-sans/400.css",
+      "@fontsource/dm-sans/500.css",
+      "@fontsource/dm-sans/700.css"
+    ],
+    "usage": {
+      "h1": "font-serif text-5xl md:text-7xl lg:text-9xl italic font-light tracking-tighter leading-[0.9]",
+      "h2": "font-serif text-4xl md:text-6xl italic font-light tracking-tight mb-8",
+      "h3": "font-sans text-xl md:text-2xl font-normal uppercase tracking-widest text-accent/80",
+      "body": "font-sans text-base md:text-lg leading-relaxed text-muted-foreground",
+      "nav": "font-sans text-sm font-medium uppercase tracking-widest hover:text-accent transition-colors",
+      "quote": "font-serif text-3xl md:text-5xl italic text-muted-foreground/60 leading-tight"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#0a0a0a",
+      "surface": "#111111",
+      "surface_hover": "#1a1a1a",
+      "primary": "#f0ece4",
+      "secondary": "#a1a1aa",
+      "accent": "#c9b99a",
+      "accent_dim": "rgba(201,185,154,0.2)",
+      "highlight": "#e8ddd0",
+      "border": "rgba(201,185,154,0.15)",
+      "error": "#ef4444"
+    },
+    "utility_classes": {
+      "bg_main": "bg-[#0a0a0a]",
+      "text_primary": "text-[#f0ece4]",
+      "text_secondary": "text-[#a1a1aa]",
+      "text_accent": "text-[#c9b99a]",
+      "border_subtle": "border-[#c9b99a]/20"
+    }
+  },
+  "visual_enhancers": {
+    "grain": "Use a fixed full-screen div with a noise svg/png overlay at 3-5% opacity using 'mix-blend-overlay' to create a film grain effect.",
+    "cursor": "Custom magnetic cursor using GSAP/Framer Motion. Small dot that expands into a ring on hover.",
+    "glassmorphism": "backdrop-blur-md bg-black/40 border border-white/5",
+    "parallax": "Parallax scrolling on all large images using GSAP ScrollTrigger or Framer Motion useScroll.",
+    "marquee": "Slow moving text ribbons for 'MONO AUREL' branding sections."
+  },
+  "layout_strategies": {
+    "container": "container mx-auto px-6 md:px-12 lg:px-24",
+    "grid_gallery": "grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 auto-rows-[400px]",
+    "section_spacing": "py-24 md:py-32 lg:py-40",
+    "bento_grid": "Use asymmetrical grid layouts (Mode A from rules). Never use equal squares for everything."
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full border border-[#c9b99a] text-[#c9b99a] bg-transparent hover:bg-[#c9b99a] hover:text-black transition-all duration-500 ease-out px-8 py-4 uppercase tracking-widest text-sm",
+      "secondary": "text-[#f0ece4] underline decoration-1 underline-offset-8 hover:text-[#c9b99a] transition-colors uppercase tracking-widest text-xs"
+    },
+    "cards": {
+      "product": "group relative overflow-hidden bg-transparent border-none. Image scales on hover. Info appears/slides up on hover.",
+      "feature": "bg-[#111111] p-8 border border-white/5 hover:border-[#c9b99a]/30 transition-colors duration-500"
+    },
+    "inputs": {
+      "style": "bg-transparent border-b border-white/20 px-0 py-4 focus:border-[#c9b99a] focus:ring-0 rounded-none placeholder:text-white/20 transition-all"
+    }
+  },
+  "media": {
+    "images": {
+      "product_sphere": "https://customer-assets.emergentagent.com/job_f854762d-e9d8-45ed-a96a-aa51980e7c30/artifacts/y2uawiad_artobject23.png",
+      "product_totem": "https://customer-assets.emergentagent.com/job_f854762d-e9d8-45ed-a96a-aa51980e7c30/artifacts/35as5za0_totemmy13.png",
+      "product_stone": "https://customer-assets.emergentagent.com/job_f854762d-e9d8-45ed-a96a-aa51980e7c30/artifacts/yymn2n6w_stone9.png",
+      "texture_dark": "https://images.unsplash.com/photo-1770648712129-17e42c4abd4e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY29uY3JldGUlMjB0ZXh0dXJlJTIwYWJzdHJhY3QlMjBtaW5pbWFsaXN0fGVufDB8fHx8MTc3MjM4NjEzNXww&ixlib=rb-4.1.0&q=85",
+      "texture_shadows": "https://images.unsplash.com/photo-1759803526018-49bad8efb5a6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHw0fHxkYXJrJTIwY29uY3JldGUlMjB0ZXh0dXJlJTIwYWJzdHJhY3QlMjBtaW5pbWFsaXN0fGVufDB8fHx8MTc3MjM4NjEzNXww&ixlib=rb-4.1.0&q=85",
+      "gallery_interior": "https://images.unsplash.com/photo-1696694138288-d3c14bdd35f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBhcnQlMjBnYWxsZXJ5JTIwaW50ZXJpb3IlMjBkYXJrJTIwbGlnaHRpbmd8ZW58MHx8fHwxNzcyMzg2MTM3fDA&ixlib=rb-4.1.0&q=85",
+      "artisan_hands": "https://images.unsplash.com/photo-1716876995651-1ff85b65a6d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxwb3R0ZXJ5JTIwYXJ0aXN0JTIwaGFuZHMlMjB3b3JraW5nJTIwY2xheSUyMGRhcmslMjBtb29keXxlbnwwfHx8fDE3NzIzODYxMzZ8MA&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL_DEPENDENCIES: `yarn add gsap @studio-freight/react-lenis framer-motion @fontsource/cormorant-garamond @fontsource/dm-sans`",
+    "SETUP_TAILWIND: Update tailwind.config.js to include the specific color palette and fonts.",
+    "SETUP_ROUTING: Configure React Router for /, /shop, /about, /journal, /contact, /admin.",
+    "SETUP_ANIMATIONS: Initialize Lenis in App.js for smooth scrolling. Use GSAP for the Hero parallax.",
+    "GLOBAL_STYLES: Add the @fontsource imports in index.js or App.js. Apply 'bg-[#0a0a0a] text-[#f0ece4]' to body in index.css.",
+    "COMPONENT_RULE: Do not use default Shadcn cards for products. Build custom minimal image-heavy components.",
+    "ACCESSIBILITY: Ensure text contrast ratios (Gold on Black) are readable. Use lighter gold/beige for small text if needed."
+  ],
+  "universal_guidelines": [
+    "You tend to converge toward generic outputs. Avoid 'AI slop'.",
+    "Don't make generic centered layouts. Use asymmetry.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "All interactive elements MUST include `data-testid` attribute."
+  ]
+}
