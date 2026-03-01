@@ -350,10 +350,10 @@ async def get_collection(collection_id: str):
 
 @api_router.post("/admin/collections", response_model=Collection)
 async def create_collection(collection_data: CollectionCreate, admin: str = Depends(verify_admin)):
-    collection = Collection(
-        **collection_data.model_dump(),
-        handle=collection_data.handle or generate_handle(collection_data.title)
-    )
+    data = collection_data.model_dump()
+    if not data.get('handle'):
+        data['handle'] = generate_handle(collection_data.title)
+    collection = Collection(**data)
     doc = collection.model_dump()
     doc['created_at'] = doc['created_at'].isoformat()
     doc['updated_at'] = doc['updated_at'].isoformat()
