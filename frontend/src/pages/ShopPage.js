@@ -209,7 +209,7 @@ const ProductDetailPage = () => {
 
   if (isLoading) {
     return (
-      <main className="min-h-screen bg-mono-black pt-32 pb-24">
+      <main className="min-h-screen bg-mono-cream pt-32 pb-24">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div className="aspect-square bg-mono-surface animate-pulse rounded-lg" />
@@ -226,7 +226,7 @@ const ProductDetailPage = () => {
 
   if (!product) {
     return (
-      <main className="min-h-screen bg-mono-black pt-32 pb-24">
+      <main className="min-h-screen bg-mono-cream pt-32 pb-24">
         <div className="container mx-auto px-6 text-center">
           <p className="text-mono-secondary">Product not found</p>
         </div>
@@ -237,12 +237,12 @@ const ProductDetailPage = () => {
   const images = product.images || [];
 
   return (
-    <main data-testid="product-detail-page" className="min-h-screen bg-mono-black pt-32 pb-24">
+    <main data-testid="product-detail-page" className="min-h-screen bg-mono-cream pt-32 pb-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* Back Link */}
         <Link
           to="/shop"
-          className="inline-flex items-center gap-2 font-sans text-xs uppercase tracking-widest text-mono-secondary hover:text-mono-cream transition-colors mb-8"
+          className="inline-flex items-center gap-2 font-sans text-xs uppercase tracking-widest text-mono-secondary hover:text-mono-primary transition-colors mb-8"
         >
           <ChevronLeft size={16} />
           {t('cart.continueShopping')}
@@ -264,13 +264,13 @@ const ProductDetailPage = () => {
                 <>
                   <button
                     onClick={() => setSelectedImageIndex((prev) => (prev - 1 + images.length) % images.length)}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-mono-black/60 rounded-full flex items-center justify-center text-mono-cream hover:bg-mono-black transition-colors"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-mono-cream/80 rounded-full flex items-center justify-center text-mono-primary hover:bg-mono-cream transition-colors"
                   >
                     <ChevronLeft size={20} />
                   </button>
                   <button
                     onClick={() => setSelectedImageIndex((prev) => (prev + 1) % images.length)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-mono-black/60 rounded-full flex items-center justify-center text-mono-cream hover:bg-mono-black transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-mono-cream/80 rounded-full flex items-center justify-center text-mono-primary hover:bg-mono-cream transition-colors"
                   >
                     <ChevronRight size={20} />
                   </button>
@@ -298,7 +298,7 @@ const ProductDetailPage = () => {
 
           {/* Details */}
           <div>
-            <h1 className="font-serif text-4xl md:text-5xl italic text-mono-cream mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl italic text-mono-primary mb-4">
               {language === 'tr' && product.title_tr ? product.title_tr : product.title}
             </h1>
 
@@ -313,19 +313,19 @@ const ProductDetailPage = () => {
               {product.materials?.length > 0 && (
                 <div className="flex justify-between">
                   <span className="font-sans text-sm text-mono-secondary">{t('shop.materials')}</span>
-                  <span className="font-sans text-sm text-mono-cream">{product.materials.join(', ')}</span>
+                  <span className="font-sans text-sm text-mono-primary">{product.materials.join(', ')}</span>
                 </div>
               )}
               {product.dimensions && (
                 <div className="flex justify-between">
                   <span className="font-sans text-sm text-mono-secondary">{t('shop.dimensions')}</span>
-                  <span className="font-sans text-sm text-mono-cream">{product.dimensions}</span>
+                  <span className="font-sans text-sm text-mono-primary">{product.dimensions}</span>
                 </div>
               )}
               {product.weight && (
                 <div className="flex justify-between">
                   <span className="font-sans text-sm text-mono-secondary">{t('shop.weight')}</span>
-                  <span className="font-sans text-sm text-mono-cream">{product.weight}</span>
+                  <span className="font-sans text-sm text-mono-primary">{product.weight}</span>
                 </div>
               )}
             </div>
@@ -336,7 +336,7 @@ const ProductDetailPage = () => {
                 <button
                   onClick={handleAddToCart}
                   data-testid="add-to-cart-btn"
-                  className="w-full flex items-center justify-center gap-3 py-4 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-black rounded-full hover:bg-mono-highlight transition-colors"
+                  className="w-full flex items-center justify-center gap-3 py-4 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-cream rounded-full hover:bg-mono-highlight transition-colors"
                 >
                   <ShoppingBag size={18} />
                   {t('shop.addToCart')}
@@ -353,7 +353,7 @@ const ProductDetailPage = () => {
               {product.custom_available && (
                 <Link
                   to="/contact"
-                  className="w-full flex items-center justify-center gap-3 py-4 font-sans text-sm uppercase tracking-widest border border-mono-accent text-mono-accent rounded-full hover:bg-mono-accent hover:text-mono-black transition-colors"
+                  className="w-full flex items-center justify-center gap-3 py-4 font-sans text-sm uppercase tracking-widest border border-mono-accent text-mono-accent rounded-full hover:bg-mono-accent hover:text-mono-cream transition-colors"
                 >
                   <Mail size={18} />
                   {t('shop.requestQuote')}
@@ -366,7 +366,7 @@ const ProductDetailPage = () => {
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <div className="mt-24">
-            <h2 className="font-serif text-3xl italic text-mono-cream mb-12">{t('shop.youMayLike')}</h2>
+            <h2 className="font-serif text-3xl italic text-mono-primary mb-12">{t('shop.youMayLike')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {relatedProducts.map((relProduct) => (
                 <Link
@@ -383,7 +383,7 @@ const ProductDetailPage = () => {
                       />
                     )}
                   </div>
-                  <h3 className="font-serif text-xl italic text-mono-cream group-hover:text-mono-accent transition-colors">
+                  <h3 className="font-serif text-xl italic text-mono-primary group-hover:text-mono-accent transition-colors">
                     {language === 'tr' && relProduct.title_tr ? relProduct.title_tr : relProduct.title}
                   </h3>
                   <p className="font-sans text-mono-accent mt-1">{formatPrice(relProduct.price)}</p>
