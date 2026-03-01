@@ -163,7 +163,7 @@ const AdminPage = () => {
   }
 
   return (
-    <main data-testid="admin-page" className="min-h-screen bg-mono-black pt-24 pb-12">
+    <main data-testid="admin-page" className="min-h-screen bg-mono-cream pt-24 pb-12">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
