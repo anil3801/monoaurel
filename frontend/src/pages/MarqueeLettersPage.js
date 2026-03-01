@@ -217,7 +217,7 @@ const MarqueeLettersPage = () => {
                 onChange={handleInputChange}
                 required
                 data-testid="marquee-form-size"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               >
                 <option value="" className="bg-mono-surface">{language === 'tr' ? 'Seçiniz' : 'Select'}</option>
                 {sizes.map((size) => (
@@ -237,7 +237,7 @@ const MarqueeLettersPage = () => {
                 onChange={handleInputChange}
                 required
                 data-testid="marquee-form-material"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               >
                 <option value="" className="bg-mono-surface">{language === 'tr' ? 'Seçiniz' : 'Select'}</option>
                 {materials.map((mat) => (
@@ -257,7 +257,7 @@ const MarqueeLettersPage = () => {
                 onChange={handleInputChange}
                 required
                 data-testid="marquee-form-light-type"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               >
                 <option value="" className="bg-mono-surface">{language === 'tr' ? 'Seçiniz' : 'Select'}</option>
                 {lightTypes.map((lt) => (
@@ -293,7 +293,7 @@ const MarqueeLettersPage = () => {
                 onChange={handleInputChange}
                 required
                 data-testid="marquee-form-purpose"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               >
                 <option value="" className="bg-mono-surface">{language === 'tr' ? 'Seçiniz' : 'Select'}</option>
                 {purposes.map((p) => (
@@ -313,7 +313,7 @@ const MarqueeLettersPage = () => {
                 value={formData.delivery_date}
                 onChange={handleInputChange}
                 data-testid="marquee-form-delivery"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
 
@@ -334,7 +334,7 @@ const MarqueeLettersPage = () => {
                     onChange={handleInputChange}
                     required
                     data-testid="marquee-form-name"
-                    className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                    className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
                   />
                 </div>
                 <div>
@@ -348,7 +348,7 @@ const MarqueeLettersPage = () => {
                     onChange={handleInputChange}
                     required
                     data-testid="marquee-form-email"
-                    className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                    className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
                   />
                 </div>
                 <div>
@@ -361,7 +361,7 @@ const MarqueeLettersPage = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     data-testid="marquee-form-phone"
-                    className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                    className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
                   />
                 </div>
               </div>
