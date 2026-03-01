@@ -193,7 +193,7 @@ const ContactPage = () => {
                     href="https://wa.me/905551234567"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 border border-mono-border rounded-full font-sans text-xs uppercase tracking-widest text-mono-secondary hover:border-mono-accent hover:text-mono-cream transition-colors flex items-center gap-2"
+                    className="px-6 py-3 border border-mono-border rounded-full font-sans text-xs uppercase tracking-widest text-mono-secondary hover:border-mono-accent hover:text-mono-primary transition-colors flex items-center gap-2"
                   >
                     <MessageCircle size={16} />
                     WhatsApp
