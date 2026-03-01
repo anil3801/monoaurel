@@ -5,7 +5,7 @@ from datetime import datetime
 from base64 import b64encode
 
 class MonoAurelAPITester:
-    def __init__(self, base_url="https://handmade-objects.preview.emergentagent.com/api"):
+    def __init__(self, base_url="https://aurel-preview.preview.emergentagent.com/api"):
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0
@@ -256,7 +256,7 @@ class MonoAurelAPITester:
                     "price": 100.00
                 }
             ],
-            "origin_url": "https://handmade-objects.preview.emergentagent.com"
+            "origin_url": "https://aurel-preview.preview.emergentagent.com"
         }
         success, session = self.run_test("Create Checkout Session", "POST", "/checkout/session", 200, checkout_data)
         
