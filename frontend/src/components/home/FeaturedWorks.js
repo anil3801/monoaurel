@@ -71,18 +71,18 @@ export const FeaturedWorks = () => {
     <section
       ref={sectionRef}
       data-testid="featured-works-section"
-      className="py-24 md:py-32 lg:py-40 bg-mono-black"
+      className="py-24 md:py-32 lg:py-40 bg-mono-cream"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
-          <h2 className="font-serif text-4xl md:text-6xl italic font-light text-mono-cream">
+          <h2 className="font-serif text-4xl md:text-6xl italic font-light text-mono-primary">
             {t('featured.title')}
           </h2>
           <Link
             to="/shop"
             data-testid="view-all-works-link"
-            className="group flex items-center gap-2 font-sans text-sm uppercase tracking-widest text-mono-accent hover:text-mono-cream transition-colors"
+            className="group flex items-center gap-2 font-sans text-sm uppercase tracking-widest text-mono-accent hover:text-mono-primary transition-colors"
           >
             {t('featured.viewAll')}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
@@ -125,7 +125,7 @@ export const FeaturedWorks = () => {
                   </div>
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-mono-black/90 via-mono-black/20 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-mono-black/80 via-mono-black/20 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
 
                   {/* Badge */}
                   <div className="absolute top-4 left-4 flex gap-2">
@@ -133,7 +133,7 @@ export const FeaturedWorks = () => {
                       {badge.text}
                     </span>
                     {product.custom_available && (
-                      <span className="px-3 py-1 font-sans text-xs uppercase tracking-wider rounded-full bg-mono-accent/20 text-mono-accent">
+                      <span className="px-3 py-1 font-sans text-xs uppercase tracking-wider rounded-full bg-mono-accent-light/20 text-mono-accent-light">
                         {t('featured.customAvailable')}
                       </span>
                     )}
@@ -144,12 +144,12 @@ export const FeaturedWorks = () => {
                     <h3 className="font-serif text-2xl md:text-3xl italic text-mono-cream mb-2">
                       {language === 'tr' && product.title_tr ? product.title_tr : product.title}
                     </h3>
-                    <p className="font-sans text-mono-accent">
+                    <p className="font-sans text-mono-accent-light">
                       {product.price_min
                         ? `${formatPrice(product.price_min)} ${t('featured.from')}`
                         : formatPrice(product.price)}
                     </p>
-                    <span className="inline-flex items-center gap-2 mt-4 font-sans text-xs uppercase tracking-widest text-mono-cream/60 group-hover:text-mono-accent transition-colors">
+                    <span className="inline-flex items-center gap-2 mt-4 font-sans text-xs uppercase tracking-widest text-mono-cream/60 group-hover:text-mono-accent-light transition-colors">
                       {t('featured.viewPiece')}
                       <ArrowRight size={14} />
                     </span>
