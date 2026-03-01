@@ -72,7 +72,7 @@ const InspirationPage = () => {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-serif text-5xl md:text-7xl italic font-light text-mono-cream mb-4"
+            className="font-serif text-5xl md:text-7xl italic font-light text-mono-primary mb-4"
           >
             {t('inspiration.title')}
           </motion.h1>
