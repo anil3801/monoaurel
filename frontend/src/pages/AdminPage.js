@@ -666,7 +666,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
                 onChange={(e) => setFormData({ ...formData, custom_available: e.target.checked })}
                 className="w-5 h-5 rounded"
               />
-              <span className="font-sans text-mono-cream">Özel Tasarım Mevcut</span>
+              <span className="font-sans text-mono-primary">Özel Tasarım Mevcut</span>
             </label>
           </div>
 
