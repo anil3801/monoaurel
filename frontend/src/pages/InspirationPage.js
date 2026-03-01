@@ -144,7 +144,7 @@ const InspirationPage = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 font-sans text-sm uppercase tracking-widest text-mono-accent hover:text-mono-cream transition-colors"
+            className="inline-flex items-center gap-2 font-sans text-sm uppercase tracking-widest text-mono-accent hover:text-mono-primary transition-colors"
           >
             {language === 'tr' ? 'B2B İletişim' : 'B2B Inquiries'}
             <ArrowRight size={16} />
