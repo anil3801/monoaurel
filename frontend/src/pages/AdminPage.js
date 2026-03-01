@@ -681,7 +681,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex-1 py-4 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-black rounded-full hover:bg-mono-highlight transition-colors disabled:opacity-50"
+              className="flex-1 py-4 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-cream rounded-full hover:bg-mono-highlight transition-colors disabled:opacity-50"
             >
               {isSubmitting ? '...' : 'Kaydet'}
             </button>
@@ -786,7 +786,7 @@ const CollectionEditModal = ({ collection, authHeader, onClose, onSave }) => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex-1 py-4 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-black rounded-full hover:bg-mono-highlight transition-colors disabled:opacity-50"
+              className="flex-1 py-4 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-cream rounded-full hover:bg-mono-highlight transition-colors disabled:opacity-50"
             >
               {isSubmitting ? '...' : 'Kaydet'}
             </button>
