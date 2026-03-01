@@ -211,7 +211,7 @@ const AboutPage = () => {
                 data-testid={`service-${index}`}
               >
                 <service.icon size={32} className="text-mono-accent mb-6 group-hover:scale-110 transition-transform" />
-                <h3 className="font-serif text-xl italic text-mono-cream mb-3">{service.title}</h3>
+                <h3 className="font-serif text-xl italic text-mono-primary mb-3">{service.title}</h3>
                 <p className="font-sans text-sm text-mono-secondary leading-relaxed">{service.description}</p>
               </motion.div>
             ))}
