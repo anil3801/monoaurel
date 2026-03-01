@@ -135,7 +135,7 @@ const AboutPage = () => {
             alt="Artisan at work"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-mono-black/80 via-mono-black/60 to-mono-black" />
+          <div className="absolute inset-0 bg-gradient-to-b from-mono-cream/60 via-mono-cream/40 to-mono-cream" />
         </div>
         <div className="relative z-10 text-center px-6">
           <motion.h1
