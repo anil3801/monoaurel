@@ -375,7 +375,7 @@ const AdminPage = () => {
             {/* Marquee Orders Tab */}
             {activeTab === 'marquee' && (
               <div>
-                <h2 className="font-sans text-lg text-mono-cream mb-6">Işıklı Harf Siparişleri ({marqueeOrders.length})</h2>
+                <h2 className="font-sans text-lg text-mono-primary mb-6">Işıklı Harf Siparişleri ({marqueeOrders.length})</h2>
                 <div className="space-y-4">
                   {marqueeOrders.map((order) => (
                     <div
