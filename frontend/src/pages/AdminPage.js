@@ -729,10 +729,10 @@ const CollectionEditModal = ({ collection, authHeader, onClose, onSave }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-      <div className="bg-mono-surface rounded-2xl w-full max-w-md">
+    <div className="fixed inset-0 bg-mono-black/60 z-50 flex items-center justify-center p-4">
+      <div className="bg-mono-cream rounded-2xl w-full max-w-md">
         <div className="p-6 border-b border-mono-border">
-          <h2 className="font-serif text-2xl italic text-mono-cream">
+          <h2 className="font-serif text-2xl italic text-mono-primary">
             {collection.id ? 'Koleksiyonu Düzenle' : 'Yeni Koleksiyon'}
           </h2>
         </div>
