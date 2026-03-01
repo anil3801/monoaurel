@@ -126,7 +126,7 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <main data-testid="about-page" className="min-h-screen bg-mono-black">
+    <main data-testid="about-page" className="min-h-screen bg-mono-cream">
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
