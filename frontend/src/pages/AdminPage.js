@@ -312,7 +312,7 @@ const AdminPage = () => {
                       className="bg-mono-surface rounded-lg p-6"
                       data-testid={`admin-collection-${collection.id}`}
                     >
-                      <h3 className="font-serif text-xl italic text-mono-cream mb-2">{collection.title}</h3>
+                      <h3 className="font-serif text-xl italic text-mono-primary mb-2">{collection.title}</h3>
                       <p className="font-sans text-sm text-mono-secondary mb-4">{collection.description}</p>
                       <div className="flex gap-2">
                         <button
