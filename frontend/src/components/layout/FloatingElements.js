@@ -65,21 +65,21 @@ export const CookieConsent = () => {
       data-testid="cookie-consent"
     >
       <div className="container mx-auto max-w-4xl">
-        <div className="glass rounded-2xl p-6 flex flex-col md:flex-row items-center gap-4 border border-mono-border">
+        <div className="bg-mono-surface rounded-2xl p-6 flex flex-col md:flex-row items-center gap-4 border border-mono-border shadow-lg">
           <p className="font-sans text-sm text-mono-secondary flex-1">
             Deneyiminizi iyileştirmek için çerezler kullanıyoruz. Devam ederek çerez politikamızı kabul etmiş olursunuz.
           </p>
           <div className="flex items-center gap-3">
             <button
               onClick={handleReject}
-              className="px-4 py-2 font-sans text-xs uppercase tracking-widest text-mono-secondary hover:text-mono-cream transition-colors"
+              className="px-4 py-2 font-sans text-xs uppercase tracking-widest text-mono-secondary hover:text-mono-primary transition-colors"
             >
               Reddet
             </button>
             <button
               onClick={handleAccept}
               data-testid="accept-cookies-btn"
-              className="px-6 py-2 font-sans text-xs uppercase tracking-widest bg-mono-accent text-mono-black rounded-full hover:bg-mono-highlight transition-colors"
+              className="px-6 py-2 font-sans text-xs uppercase tracking-widest bg-mono-accent text-mono-cream rounded-full hover:bg-mono-highlight transition-colors"
             >
               Kabul Et
             </button>
