@@ -101,7 +101,7 @@ const MarqueeLettersPage = () => {
   ];
 
   return (
-    <main data-testid="marquee-letters-page" className="min-h-screen bg-mono-black pt-32 pb-24">
+    <main data-testid="marquee-letters-page" className="min-h-screen bg-mono-cream pt-32 pb-24">
       {/* Hero */}
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-mono-accent/10 to-transparent" />
