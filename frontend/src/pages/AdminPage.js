@@ -347,7 +347,7 @@ const AdminPage = () => {
                     >
                       <div className="flex justify-between items-start mb-4">
                         <div>
-                          <h3 className="font-sans text-mono-cream font-medium">{quote.name}</h3>
+                          <h3 className="font-sans text-mono-primary font-medium">{quote.name}</h3>
                           <p className="font-sans text-sm text-mono-secondary">{quote.email}</p>
                         </div>
                         <span className={`px-2 py-1 font-sans text-xs rounded ${
