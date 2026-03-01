@@ -642,7 +642,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
               <button
                 type="button"
                 onClick={addImage}
-                className="px-4 py-2 bg-mono-accent text-mono-black rounded-full font-sans text-xs"
+                className="px-4 py-2 bg-mono-accent text-mono-cream rounded-full font-sans text-xs"
               >
                 Ekle
               </button>
