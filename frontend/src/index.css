@@ -14,25 +14,25 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 40 20% 94%;
-    --card: 0 0% 7%;
-    --card-foreground: 40 20% 94%;
-    --popover: 0 0% 7%;
-    --popover-foreground: 40 20% 94%;
-    --primary: 40 20% 94%;
-    --primary-foreground: 0 0% 4%;
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 40 20% 94%;
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 65%;
-    --accent: 38 27% 70%;
-    --accent-foreground: 0 0% 4%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 40 20% 94%;
-    --border: 38 27% 70% / 0.15;
-    --input: 0 0% 14%;
-    --ring: 38 27% 70%;
+    --background: 38 30% 93%;
+    --foreground: 30 15% 9%;
+    --card: 38 25% 90%;
+    --card-foreground: 30 15% 9%;
+    --popover: 38 25% 90%;
+    --popover-foreground: 30 15% 9%;
+    --primary: 30 15% 9%;
+    --primary-foreground: 38 30% 93%;
+    --secondary: 38 20% 85%;
+    --secondary-foreground: 30 15% 9%;
+    --muted: 38 20% 85%;
+    --muted-foreground: 30 12% 32%;
+    --accent: 32 35% 41%;
+    --accent-foreground: 38 30% 93%;
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 38 30% 93%;
+    --border: 32 35% 41% / 0.2;
+    --input: 38 20% 85%;
+    --ring: 32 35% 41%;
     --radius: 0.5rem;
   }
 }
@@ -47,36 +47,36 @@
   }
   
   body {
-    @apply bg-mono-black text-mono-cream font-sans antialiased;
+    @apply bg-mono-cream text-mono-primary font-sans antialiased;
     min-height: 100vh;
   }
 
-  /* Custom Scrollbar */
+  /* Custom Scrollbar - Warm tones */
   ::-webkit-scrollbar {
     width: 8px;
   }
   
   ::-webkit-scrollbar-track {
-    background: #0a0a0a;
+    background: #ede8dc;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgba(201, 185, 154, 0.3);
+    background: rgba(139, 111, 71, 0.4);
     border-radius: 4px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(201, 185, 154, 0.5);
+    background: rgba(139, 111, 71, 0.6);
   }
 
   /* Selection */
   ::selection {
-    background: rgba(201, 185, 154, 0.3);
-    color: #f0ece4;
+    background: rgba(139, 111, 71, 0.25);
+    color: #1a1714;
   }
 }
 
-/* Grain Overlay */
+/* Warm Grain Overlay */
 .grain-overlay {
   position: fixed;
   top: 0;
@@ -85,19 +85,19 @@
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.04;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-/* Custom Cursor */
+/* Custom Cursor - Bronze tones */
 .cursor-dot {
   position: fixed;
   top: 0;
   left: 0;
   width: 8px;
   height: 8px;
-  background: #c9b99a;
+  background: #8b6f47;
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
@@ -110,7 +110,7 @@
   left: 0;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(201, 185, 154, 0.5);
+  border: 1px solid rgba(139, 111, 71, 0.5);
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
@@ -126,7 +126,7 @@
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #c9b99a;
+  color: #8b6f47;
   opacity: 0;
   transition: opacity 0.3s ease-out;
 }
@@ -209,7 +209,7 @@
 .product-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10, 10, 10, 0.9) 0%, transparent 50%);
+  background: linear-gradient(to top, rgba(26, 23, 20, 0.8) 0%, transparent 50%);
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
@@ -228,11 +228,12 @@
   display: none;
 }
 
-/* Glass effect */
+/* Glass effect - Warm version */
 .glass {
-  background: rgba(17, 17, 17, 0.8);
+  background: rgba(237, 232, 220, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(139, 111, 71, 0.1);
 }
 
 /* Input focus styles */
