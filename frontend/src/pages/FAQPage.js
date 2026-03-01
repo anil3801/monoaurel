@@ -178,7 +178,7 @@ const FAQPage = () => {
                     data-testid={`faq-item-${key}-${index}`}
                   >
                     <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-mono-surface-hover transition-colors">
-                      <span className="font-sans text-left text-mono-cream">{item.question}</span>
+                      <span className="font-sans text-left text-mono-primary">{item.question}</span>
                     </AccordionTrigger>
                     <AccordionContent className="px-6 pb-4">
                       <p className="font-sans text-mono-secondary leading-relaxed">{item.answer}</p>
