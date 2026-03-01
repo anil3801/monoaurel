@@ -134,7 +134,7 @@ const AdminPage = () => {
                 value={credentials.username}
                 onChange={(e) => setCredentials({ ...credentials, username: e.target.value })}
                 data-testid="admin-username"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
             <div>
@@ -146,7 +146,7 @@ const AdminPage = () => {
                 value={credentials.password}
                 onChange={(e) => setCredentials({ ...credentials, password: e.target.value })}
                 data-testid="admin-password"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
             <button
@@ -518,7 +518,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
                 value={formData.title}
                 onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                 required
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
             <div>
@@ -529,7 +529,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
                 type="text"
                 value={formData.title_tr}
                 onChange={(e) => setFormData({ ...formData, title_tr: e.target.value })}
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
           </div>
@@ -569,7 +569,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
                 value={formData.price}
                 onChange={(e) => setFormData({ ...formData, price: e.target.value })}
                 required
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
             <div>
@@ -579,7 +579,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
               <select
                 value={formData.stock_status}
                 onChange={(e) => setFormData({ ...formData, stock_status: e.target.value })}
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               >
                 <option value="in_stock" className="bg-mono-surface">Stokta</option>
                 <option value="made_to_order" className="bg-mono-surface">Sipariş Üzerine</option>
@@ -598,7 +598,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
                 value={formData.materials}
                 onChange={(e) => setFormData({ ...formData, materials: e.target.value })}
                 placeholder="Seramik, Taş"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
             <div>
@@ -610,7 +610,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
                 value={formData.dimensions}
                 onChange={(e) => setFormData({ ...formData, dimensions: e.target.value })}
                 placeholder="120cm x 40cm"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
             <div>
@@ -622,7 +622,7 @@ const ProductEditModal = ({ product, collections, authHeader, onClose, onSave })
                 value={formData.weight}
                 onChange={(e) => setFormData({ ...formData, weight: e.target.value })}
                 placeholder="25kg"
-                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-cream focus:border-mono-accent transition-colors"
+                className="w-full bg-transparent border-b border-mono-border px-0 py-3 font-sans text-mono-primary focus:border-mono-accent transition-colors"
               />
             </div>
           </div>
