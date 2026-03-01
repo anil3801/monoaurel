@@ -196,7 +196,7 @@ const AboutPage = () => {
       {/* Services */}
       <section className="py-24 md:py-32 bg-mono-surface">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <h2 className="font-serif text-4xl md:text-5xl italic text-mono-cream mb-16 text-center">
+          <h2 className="font-serif text-4xl md:text-5xl italic text-mono-primary mb-16 text-center">
             {t('about.servicesTitle')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -222,7 +222,7 @@ const AboutPage = () => {
       {/* Process */}
       <section ref={timelineRef} className="py-24 md:py-32">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <h2 className="font-serif text-4xl md:text-5xl italic text-mono-cream mb-16 text-center">
+          <h2 className="font-serif text-4xl md:text-5xl italic text-mono-primary mb-16 text-center">
             {t('about.processTitle')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -242,7 +242,7 @@ const AboutPage = () => {
       {/* Testimonials */}
       <section className="py-24 md:py-32 bg-mono-surface">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <h2 className="font-serif text-4xl md:text-5xl italic text-mono-cream mb-16 text-center">
+          <h2 className="font-serif text-4xl md:text-5xl italic text-mono-primary mb-16 text-center">
             {t('about.testimonials')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
