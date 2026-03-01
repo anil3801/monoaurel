@@ -252,7 +252,7 @@ const AdminPage = () => {
                             </div>
                           </td>
                           <td className="py-4">
-                            <p className="font-sans text-mono-cream">{product.title}</p>
+                            <p className="font-sans text-mono-primary">{product.title}</p>
                             <p className="font-sans text-xs text-mono-secondary">{product.handle}</p>
                           </td>
                           <td className="py-4 font-sans text-mono-cream">
