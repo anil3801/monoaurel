@@ -36,17 +36,17 @@ export const CustomCTA = () => {
     <section
       ref={sectionRef}
       data-testid="custom-cta-section"
-      className="py-24 md:py-32 bg-mono-black relative overflow-hidden"
+      className="py-24 md:py-32 bg-mono-surface-dark relative overflow-hidden"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-mono-accent rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-mono-accent rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
         <div className="cta-content max-w-3xl mx-auto text-center">
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl italic font-light text-mono-cream mb-6">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl italic font-light text-mono-primary mb-6">
             {t('customCTA.title')}
           </h2>
           <p className="font-sans text-base md:text-lg text-mono-secondary mb-10 max-w-xl mx-auto">
@@ -55,7 +55,7 @@ export const CustomCTA = () => {
           <Link
             to="/contact"
             data-testid="custom-cta-btn"
-            className="group inline-flex items-center gap-3 px-8 py-4 border border-mono-accent text-mono-accent rounded-full hover:bg-mono-accent hover:text-mono-black transition-all duration-500"
+            className="group inline-flex items-center gap-3 px-8 py-4 bg-mono-accent text-mono-cream rounded-full hover:bg-mono-highlight transition-all duration-500"
           >
             <span className="font-sans text-sm uppercase tracking-widest">{t('customCTA.btn')}</span>
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
@@ -96,11 +96,11 @@ export const Newsletter = () => {
   return (
     <section
       data-testid="newsletter-section"
-      className="py-20 md:py-24 bg-mono-surface border-t border-mono-border"
+      className="py-20 md:py-24 bg-mono-cream border-t border-mono-border"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="max-w-2xl mx-auto text-center">
-          <h3 className="font-serif text-3xl md:text-4xl italic text-mono-cream mb-4">
+          <h3 className="font-serif text-3xl md:text-4xl italic text-mono-primary mb-4">
             {t('newsletter.title')}
           </h3>
           <p className="font-sans text-mono-secondary mb-8">
@@ -117,14 +117,14 @@ export const Newsletter = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('newsletter.placeholder')}
                 data-testid="newsletter-email-input"
-                className="flex-1 bg-transparent border-b border-mono-border px-4 py-3 font-sans text-mono-cream placeholder:text-mono-secondary/50 focus:border-mono-accent transition-colors"
+                className="flex-1 bg-transparent border-b border-mono-border px-4 py-3 font-sans text-mono-primary placeholder:text-mono-secondary/50 focus:border-mono-accent transition-colors"
                 required
               />
               <button
                 type="submit"
                 disabled={isLoading}
                 data-testid="newsletter-submit-btn"
-                className="px-8 py-3 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-black rounded-full hover:bg-mono-highlight transition-colors disabled:opacity-50"
+                className="px-8 py-3 font-sans text-sm uppercase tracking-widest bg-mono-accent text-mono-cream rounded-full hover:bg-mono-highlight transition-colors disabled:opacity-50"
               >
                 {isLoading ? '...' : t('newsletter.btn')}
               </button>
