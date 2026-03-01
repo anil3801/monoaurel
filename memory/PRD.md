@@ -2,12 +2,12 @@
 
 ## Project Overview
 **Project:** Mono Aurel - Luxury Art Atelier E-commerce Website  
-**Version:** 1.0  
-**Date:** March 2026  
-**Status:** MVP Complete
+**Version:** 1.1  
+**Date:** December 2025  
+**Status:** MVP Complete - Theme Updated
 
 ## Original Problem Statement
-MONO AUREL — Luxury art atelier website featuring handmade ceramic sculptures, totem objects, decorative stone objects, columns, geometric art pieces, marquee illuminated letters, and custom design products. Dark luxury gallery aesthetic targeting Shopify migration.
+MONO AUREL — Luxury art atelier website featuring handmade ceramic sculptures, totem objects, decorative stone objects, columns, geometric art pieces, marquee illuminated letters, and custom design products. Initially dark luxury gallery aesthetic, now updated to warm cream/beige "Marrakech + luxury atelier" theme. Targeting Shopify migration.
 
 ## User Personas
 1. **Interior Designers & Architects** - B2B clients seeking unique art pieces for projects
