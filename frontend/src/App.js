@@ -70,9 +70,9 @@ function App() {
               position="bottom-right"
               toastOptions={{
                 style: {
-                  background: '#111111',
-                  border: '1px solid rgba(201,185,154,0.2)',
-                  color: '#f0ece4',
+                  background: '#ede8dc',
+                  border: '1px solid rgba(139,111,71,0.2)',
+                  color: '#1a1714',
                   fontFamily: '"DM Sans", sans-serif',
                 },
               }}
