@@ -41,7 +41,7 @@ function App() {
     <LanguageProvider>
       <CartProvider>
         <BrowserRouter>
-          <div className="App min-h-screen bg-mono-black text-mono-cream">
+          <div className="App min-h-screen bg-mono-cream text-mono-primary">
             <ScrollToTop />
             <CustomCursor />
             <GrainOverlay />
