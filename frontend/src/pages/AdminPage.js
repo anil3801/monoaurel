@@ -220,7 +220,7 @@ const AdminPage = () => {
             {activeTab === 'products' && (
               <div>
                 <div className="flex justify-between items-center mb-6">
-                  <h2 className="font-sans text-lg text-mono-cream">Ürünler ({products.length})</h2>
+                  <h2 className="font-sans text-lg text-mono-primary">Ürünler ({products.length})</h2>
                   <button
                     onClick={() => setEditingProduct({})}
                     className="flex items-center gap-2 px-4 py-2 font-sans text-xs uppercase tracking-widest bg-mono-accent text-mono-black rounded-full hover:bg-mono-highlight transition-colors"
