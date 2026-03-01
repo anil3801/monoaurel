@@ -152,7 +152,7 @@ const JournalPage = () => {
                       />
                     )}
                     <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 font-sans text-xs uppercase tracking-wider rounded-full bg-mono-black/60 text-mono-cream">
+                      <span className="px-3 py-1 font-sans text-xs uppercase tracking-wider rounded-full bg-mono-cream/90 text-mono-primary">
                         {post.category}
                       </span>
                     </div>
