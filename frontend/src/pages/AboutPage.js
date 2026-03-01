@@ -229,7 +229,7 @@ const AboutPage = () => {
             {processSteps.map((step, index) => (
               <div key={index} className="process-step" data-testid={`process-step-${index}`}>
                 <span className="font-serif text-6xl italic text-mono-accent/30">{step.step}</span>
-                <h3 className="font-serif text-2xl italic text-mono-cream mt-4 mb-2">
+                <h3 className="font-serif text-2xl italic text-mono-primary mt-4 mb-2">
                   {language === 'tr' ? step.titleTr : step.title}
                 </h3>
                 <p className="font-sans text-sm text-mono-secondary">{step.description}</p>
