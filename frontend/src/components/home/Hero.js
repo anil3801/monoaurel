@@ -55,7 +55,7 @@ export const Hero = () => {
           alt="Mono Aurel Gallery"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-mono-black/60 via-mono-black/40 to-mono-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-mono-cream/30 via-mono-cream/10 to-mono-cream" />
       </div>
 
       {/* Content */}
@@ -67,7 +67,7 @@ export const Hero = () => {
           MONO AUREL — {t('hero.subtitle')}
         </span>
 
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl italic font-light text-mono-cream leading-[0.95] max-w-5xl">
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl italic font-light text-mono-primary leading-[0.95] max-w-5xl">
           {t('hero.tagline')}
         </h1>
 
@@ -75,7 +75,7 @@ export const Hero = () => {
           <Link
             to="/shop"
             data-testid="hero-explore-btn"
-            className="group flex items-center gap-3 px-8 py-4 border border-mono-accent text-mono-accent rounded-full hover:bg-mono-accent hover:text-mono-black transition-all duration-500"
+            className="group flex items-center gap-3 px-8 py-4 bg-mono-accent text-mono-cream rounded-full hover:bg-mono-highlight transition-all duration-500"
           >
             <span className="font-sans text-sm uppercase tracking-widest">{t('hero.exploreBtn')}</span>
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
@@ -83,7 +83,7 @@ export const Hero = () => {
           <Link
             to="/contact"
             data-testid="hero-custom-btn"
-            className="px-8 py-4 font-sans text-sm uppercase tracking-widest text-mono-cream/80 underline underline-offset-8 decoration-1 hover:text-mono-accent transition-colors"
+            className="px-8 py-4 font-sans text-sm uppercase tracking-widest text-mono-primary underline underline-offset-8 decoration-1 hover:text-mono-accent transition-colors"
           >
             {t('hero.customBtn')}
           </Link>
@@ -122,7 +122,7 @@ export const MarqueeBanner = () => {
         {[...Array(4)].map((_, i) => (
           <span
             key={i}
-            className="font-sans text-sm md:text-base tracking-[0.3em] text-mono-accent/70 mx-4"
+            className="font-sans text-sm md:text-base tracking-[0.3em] text-mono-accent mx-4"
           >
             {text} {text}
           </span>
