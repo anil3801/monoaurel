@@ -1,5 +1,9 @@
 {
-  "buildCommand": "cd frontend && npm install --legacy-peer-deps && npm run build",
-  "outputDirectory": "frontend/build",
-  "installCommand": "echo skip"
+    "buildCommand": "cd frontend && npm install --legacy-peer-deps && npm run build",
+    "outputDirectory": "frontend/build",
+    "installCommand": "echo skip",
+    "framework": null,
+    "engines": {
+          "node": "20.x"
+    }
 }
